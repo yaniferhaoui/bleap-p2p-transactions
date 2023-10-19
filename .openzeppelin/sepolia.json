@@ -1,0 +1,113 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x7bA0CB5a61869E2e51C852bEFC94995C6176948A",
+    "txHash": "0xe11e8175078c4b96e64346ff44ac4461526abd870e8ece0195bf0f8d7da285d5"
+  },
+  "proxies": [
+    {
+      "address": "0xBDA1D4e29689fb935bAb590Fd6CD7AFC8DE20A73",
+      "txHash": "0x99e7f6d5b9ba4eb0d4711437d683254f6464ea11348efcea0b9c9b6b99d2fe55",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "496efdfd3e9af2fbeeadeeb63755ce30de86d552c386db61687cbe659ee1db60": {
+      "address": "0x5BBa2b5dd88ac4E852966c62bc838119832Cf1f6",
+      "txHash": "0x429c5de4c6e2b42696c82dbdf479a776752040c29164b22cad94a30db0f87271",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "bleapAddress",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "P2PTransaction",
+            "src": "solidity/contracts/P2PTransaction.sol:11"
+          },
+          {
+            "label": "kycStatus",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "P2PTransaction",
+            "src": "solidity/contracts/P2PTransaction.sol:13"
+          },
+          {
+            "label": "balances",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "P2PTransaction",
+            "src": "solidity/contracts/P2PTransaction.sol:14"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)10_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
