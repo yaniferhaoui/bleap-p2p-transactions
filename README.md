@@ -1,4 +1,4 @@
-# bleap-p2P-transactions
+# bleap-p2p-transactions
 
 Small PoC of a P2P transaction system using a proxied smart contract for Upgradability with a Java Spring Boot backend to interact with KYC RPC methods and read methods
 
