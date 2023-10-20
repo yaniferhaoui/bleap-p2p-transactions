@@ -54,8 +54,8 @@ Small PoC of a P2P transaction system using a proxied smart contract for Upgrada
  - npx hardhat run scripts/transferProxyOwnership.ts --network sepolia
 
 ### Deployed Smart Contracts on Sepolia Testnet
- - Owner : https://sepolia.etherscan.io/address/0xeD210377de31a819B691D37e6093c02f9f15E76f
- - Creator : https://sepolia.etherscan.io/address/0xB437eCAB194142887F5ABb95f0F1a3fE37a398CC
+ - Owner Wallet : https://sepolia.etherscan.io/address/0xeD210377de31a819B691D37e6093c02f9f15E76f
+ - Creator Wallet : https://sepolia.etherscan.io/address/0xB437eCAB194142887F5ABb95f0F1a3fE37a398CC
  - ProxyAdmin : https://sepolia.etherscan.io/address/0x7ba0cb5a61869e2e51c852befc94995c6176948a#code
  - P2PTransaction V1 : https://sepolia.etherscan.io/address/0x5bba2b5dd88ac4e852966c62bc838119832cf1f6#code
  - P2PTransaction Proxy : https://sepolia.etherscan.io/address/0xbda1d4e29689fb935bab590fd6cd7afc8de20a73#readProxyContract
@@ -65,6 +65,7 @@ Small PoC of a P2P transaction system using a proxied smart contract for Upgrada
 ### Env.yml configuration
  - Rename ./.env.example.yml to ./.env.yml
  - Fill the global variables of this file
+ - Default Username & Password stored in this file (For the example)
 
 ### Maven start (Let's keep it simple here)
  - mvn spring-boot:run
@@ -73,6 +74,9 @@ Small PoC of a P2P transaction system using a proxied smart contract for Upgrada
  - Get User Balance : http://localhost:9500/users/{userAddress}/balance
  - Post valid-kyc : http://localhost:9500/valid-kyc
  - Post invalid-kyc : http://localhost:9500/invalid-kyc
+
+### Screenshots
+- In case you don't want to recompile and run the whole project, you can find some screenshots of the results in the **./screenshots** folder.
 
 ## Future Improvements
  - More SC features and endpoints

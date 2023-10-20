@@ -7,10 +7,6 @@ spring:
   config.import: classpath:.env.yml
   application:
     name: bleap-p2p-transactions-backend
-  security:
-    user:
-      name: bleap-username
-      password: bleap-password
 
 logging: # For reading incoming request logs
   level:
