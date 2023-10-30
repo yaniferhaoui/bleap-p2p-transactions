@@ -1,4 +1,4 @@
-# bleap-p2p-transactions
+# p2p-transactions-dapp
 
 Small PoC of a P2P transaction system using a proxied smart contract for Upgradability with a Java Spring Boot backend to interact with KYC RPC methods and read methods
 
@@ -90,4 +90,3 @@ Small PoC of a P2P transaction system using a proxied smart contract for Upgrada
  - Doing external smart contract audits
  - Maybe more that I can't think of right now :)
 
-### Thanks for Review !
